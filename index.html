@@ -1,0 +1,341 @@
+---
+title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
+---
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  {% assign title = page.title | default: site.title | escape %}
+  {% assign canonical = page.url | replace:'index.html','' | absolute_url %}
+  {% assign description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | escape %}
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  {% if page.keywords %}
+    {% if page.keywords.first %}
+      {% assign keywords = page.keywords | join: ',' %}
+    {% else %}
+      {% assign keywords = page.keywords %}
+    {% endif %}
+    <meta name="keywords" content="{{ keywords }}">
+  {% endif %}
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="author" content="Maurício Aniche">
+
+  <!-- Mobile Specific Meta-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css">
+  <!-- Iconfont Css -->
+  <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css">
+  <link rel="stylesheet" href="assets/vendors/bicon/css/bicon.min.css">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="assets/vendors/animate-css/animate.css">
+
+   <!-- Owl Carousel  CSS -->
+  <link rel="stylesheet" href="assets/vendors/owl/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/vendors/owl/assets/owl.theme.default.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body id="top-header">
+
+  
+    
+{% include menu.html %}
+
+
+   
+<section class="banner pb-80" id="cover">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md-12 col-lg-6">
+                <div class="banner-content ">
+
+                    <h1>Learn how to write tests in an effective and systematic way!</h1>
+                    <ul>
+                        <li><i class="fa fa-check"></i>Create tests that really find bugs</li>
+                        <li><i class="fa fa-check"></i>Use code coverage in the right away</li>
+                        <li><i class="fa fa-check"></i>When to go for unit, integration or system testing</li>
+                        <li><i class="fa fa-check"></i>Use mocks and stubs to simplify your unit testing</li>
+                        <li><i class="fa fa-check"></i>Write property-based tests</li>
+                        <li><i class="fa fa-check"></i>Design testable systems</li>
+                    </ul>
+                    <a href="#" class="btn btn-main">Get this book now!</a>  
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="banner-img">
+                    <img src="assets/images/cover.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</section>
+
+
+
+<section class="chapter-section section-padding bg-white" id="chapters">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-8">
+                <div class="center-heading mb-60">
+                    <h3 class="heading-title">Chapters</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-lg-4 col-md-6">
+                <div class="chapter-list">
+                    <div class="chapter-item">
+                        <h4><span>Chapter 1</span> Effective and systematic software testing</h4>
+                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                    </div>
+                    <div class="chapter-item">
+                        <h4><span>Chapter 2</span> Specification-based testing</h4>
+                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                    </div>
+                    <div class="chapter-item">
+                        <h4><span>Chapter 3 </span> Structural testing and code coverage</h4>
+                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="chapter-list">
+                    <div class="chapter-item">
+                        <h4><span>Chapter 4</span> Designing contracts</h4>
+                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                    </div>
+                    <div class="chapter-item">
+                        <h4><span>Chapter 5</span> Property-based testing</h4>
+                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                    </div>
+                    <div class="chapter-item">
+                        <h4><span>Chapter 6</span> Test doubles and mocks</h4>
+                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="chapter-list border-right-0">
+                    <div class="chapter-item">
+                        <h4><span>Chapter 7 </span> Designing for testability</h4>
+                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                    </div>
+                    <div class="chapter-item">
+                        <h4><span>Chapter 8</span> Test-driven development</h4>
+                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                    </div>
+                   
+                    <div class="chapter-item">
+                        <h4><span>Chapter 9 </span> Larger tests</h4>
+                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="chapter-list border-right-0">
+                    <div class="chapter-item">
+                        <h4><span>Chapter 10 </span> Test code quality</h4>
+                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+
+
+<section class="chapter-section section-padding bg-white" id="blog">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-8">
+                <div class="center-heading mb-60">
+                    <h3 class="heading-title">Blog</h3>
+                    <p>Some extra content!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time> - <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+
+        </div>
+    </div>
+</section>
+
+
+<section class="author-section section-padding bg-white" id="author">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-heading center-heading text-center mb-60">
+                    <h3 class="heading-title">About the author</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-lg-5 col-md-6">
+               <div class="auhtor-img mb-4 mb-lg-0">
+                    <img src="assets/images/mauricio.jpg" alt="" class="img-fluid">
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="section-heading mb-0">
+                    <h3 class="heading-title">Maurício Aniche</h3>
+                    <p>Dr. Maurício Aniche leads the Tech Academy of Adyen, and is also an Assistant Professor in Software Engineering at Delft University of Technology in the Netherlands. His teaching efforts in software testing have awarded him the Teacher of Year 2021 award and the TU Delft Education Fellowship. Maurício holds MSc and PhD degrees in Computer Science from the University of São Paulo, Brazil. He also co-founded Alura, one of the most popular e-learning platforms for software engineers in Brazil.</p>
+                </div>
+
+                <div class="author-desc">
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-check"></i> PhD in software engineering</li>
+                        <li><i class="fa fa-check"></i> TU Delft education fellow and Teacher of the Year</li>
+                        <li><i class="fa fa-check"></i> Years of experience in software testing</li>
+                    </ul>
+                    <p>Reach me on <a href="https://www.twitter.com/mauricioaniche" target="_blank">Twitter</a> or <a href="https://www.linkedin.com/in/mauricioaniche/" target="_blank">Linkedin</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+ 
+
+
+<section class="faq section-padding bg-grey pt-0" id="faq">
+	<div class="container">
+		<div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-heading center-heading text-center mb-60">
+                    <h3 class="heading-title">Frequently Asked Questions</h3>
+                </div>
+            </div>
+        </div>
+		<div class="row justify-content-center">
+			<div class="col-lg-6">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			        <div class="panel panel-default">
+			            <div class="panel-heading" role="tab" id="headingOne">
+			                <h4 class="panel-title ">
+			                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-controls="collapseOne">
+			                        <i class="more-less fa fa-plus"></i>
+			                        What programming language is used in this book?
+			                    </a>
+			                </h4>
+			            </div>
+			            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+			                <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum 
+			                </div>
+			            </div>
+			        </div>
+
+			        <div class="panel panel-default">
+			            <div class="panel-heading" role="tab" id="headingTwo">
+			                <h4 class="panel-title ">
+			                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"  aria-controls="collapseTwo">
+			                        <i class="more-less fa fa-plus"></i>
+			                        Is this book for developers or testers?
+			                    </a>
+			                </h4>
+			            </div>
+			            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			                <div class="panel-body">
+			                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum 
+			                </div>
+			            </div>
+			        </div>
+
+
+                </div><!-- panel-group -->
+            </div>
+            
+            <div class="col-lg-6">
+				<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title ">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"  aria-controls="collapseThree">
+                                    <i class="more-less fa fa-plus"></i>
+                                    Is this book for novices or seniors?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title ">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-controls="collapseFour">
+                                    <i class="more-less fa fa-plus"></i>
+                                    Where and how can I buy this book?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum 
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+			    </div><!-- panel-group -->
+            </div>
+
+        </div>
+	</div>
+</section>
+
+
+{% include footer.html %}
+
+
+<div class="fixed-btm-top">
+	<a href="#top-header" class="js-scroll-trigger scroll-to-top"><i class="fa fa-angle-up"></i></a>
+</div>
+
+
+    <!-- 
+    Essential Scripts
+    =====================================-->
+    
+    <!-- Main jQuery -->
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4.5 -->
+    <script src="assets/vendors/bootstrap/bootstrap.js"></script>
+    <!-- Counterup -->
+    <script src="assets/vendors/counterup/waypoint.js"></script>
+    <script src="assets/vendors/counterup/jquery.counterup.min.js"></script>
+    <!--  Owl Carousel-->
+    <script src="assets/vendors/owl/owl.carousel.min.js"></script>
+   
+    <script src="assets/js/script.js"></script>
+  
+
+  </body>
+  </html>
+   

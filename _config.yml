@@ -1,0 +1,11 @@
+title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
+description: "Effective Software Testing is a book written by Maurício Aniche and published by Manning"
+keywords: "mauricio aniche, effective software testing"
+url: http://www.effective-software-testing.com
+
+theme: null
+permalink: /:title
+
+destination: _site
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
