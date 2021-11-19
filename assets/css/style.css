@@ -2115,7 +2115,7 @@ Footer Section
   font-size:  20px;
   align-items: center;
   flex-direction: column-reverse;
-  margin-bottom: 1em;
+  margin: 1em;
 }
 
 .article-list {
@@ -2131,6 +2131,10 @@ Footer Section
       width:  80%;
       margin:  auto;
     }
+}
+
+.post-row {
+  margin: 1em;
 }
 
 .post-row li {
