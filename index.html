@@ -66,7 +66,7 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
                         <li><i class="fa fa-check"></i>Write property-based tests</li>
                         <li><i class="fa fa-check"></i>Design testable systems</li>
                     </ul>
-                    <a href="#" class="btn btn-main">Get this book now!</a>  
+                    <a href="https://www.manning.com/books/effective-software-testing?utm_source=aniche&utm_medium=affiliate&utm_campaign=book_aniche_effective_11_16_21&a_aid=aniche&a_bid=6e66ba23" class="btn btn-main">Get this book now!</a>  
                 </div>
             </div>
             <div class="col-lg-5">
@@ -94,15 +94,15 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
                 <div class="chapter-list">
                     <div class="chapter-item">
                         <h4><span>Chapter 1</span> Effective and systematic software testing</h4>
-                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                        <p>What does it mean to write tests in a systematic and effective way?</p>
                     </div>
                     <div class="chapter-item">
                         <h4><span>Chapter 2</span> Specification-based testing</h4>
-                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                        <p>The first step is to engineer tests based on what the program should do</p>
                     </div>
                     <div class="chapter-item">
                         <h4><span>Chapter 3 </span> Structural testing and code coverage</h4>
-                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                        <p>We then augment our test suite by looking at coverage reports and look for new tests</p>
                     </div>
                 </div>
             </div>
@@ -111,15 +111,15 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
                 <div class="chapter-list">
                     <div class="chapter-item">
                         <h4><span>Chapter 4</span> Designing contracts</h4>
-                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                        <p>Having clear pre- and post-conditions help us "testing the system from the inside"</p>
                     </div>
                     <div class="chapter-item">
                         <h4><span>Chapter 5</span> Property-based testing</h4>
-                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                        <p>Instead of writing tests that exercise a single example, can we test higher-level properties?</p>
                     </div>
                     <div class="chapter-item">
                         <h4><span>Chapter 6</span> Test doubles and mocks</h4>
-                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                        <p>Classes depend on each other. How to test classes that depend on other classes?</p>
                     </div>
                 </div>
             </div>
@@ -128,16 +128,16 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
                 <div class="chapter-list border-right-0">
                     <div class="chapter-item">
                         <h4><span>Chapter 7 </span> Designing for testability</h4>
-                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                        <p>Some systems are easy to be tested, others are not. Let's talk about design principles that make software systems testable.</p>
                     </div>
                     <div class="chapter-item">
                         <h4><span>Chapter 8</span> Test-driven development</h4>
-                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                        <p>What if we actually write the test before the production code?</p>
                     </div>
                    
                     <div class="chapter-item">
                         <h4><span>Chapter 9 </span> Larger tests</h4>
-                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly
+                        <p>Unit tests are not enough, but integration tests are no piece of cake. Let's talk about them.
                     </div>
                 </div>
             </div>
@@ -146,7 +146,7 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
                 <div class="chapter-list border-right-0">
                     <div class="chapter-item">
                         <h4><span>Chapter 10 </span> Test code quality</h4>
-                        <p>Well-written book is concerned with creating typography and is essential for professionals who regularly</p>
+                        <p>Test is code, and code needs to be maintained. Learn how to write clear and concise test code.</p>
                     </div>
 
                 </div>
@@ -157,22 +157,22 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
 
 
 
-<section class="chapter-section section-padding bg-grey" id="blog">
+<section class="chapter-section section-padding bg-grey" id="articles">
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-8">
                 <div class="center-heading mb-60">
-                    <h3 class="heading-title">Blog</h3>
-                    <p>Some extra content!</p>
+                    <h3 class="heading-title">Articles</h3>
                 </div>
             </div>
         </div>
         <div class="row">
 
-<ul>
+<ul class="article-list">
   {% for post in site.posts %}
-    <li>
-      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time> - <a href="{{ post.url }}">{{ post.title }}</a>
+    <li class="article-item">
+      <time class="article-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
@@ -242,7 +242,7 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
 			            </div>
 			            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 			                <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum 
+                                The examples in this book are written in Java. I also make use of Java frameworks, such as JUnit and Mockito. However, I used "basic Java". If you come from a similar language, you should be able to understand this book completely. If you are from a language a bit far away from Java, you can still learn the techniques. Writing the test code itself, in any language, is the "easy part", if you ask me!
 			                </div>
 			            </div>
 			        </div>
@@ -258,7 +258,7 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
 			            </div>
 			            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 			                <div class="panel-body">
-			                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum 
+			                    This book is more meant for developers. I mean, for the person that also wrote the production code. That being said, testers can also benefit from this book, as many of the techniques I discuss here are also useful for them.
 			                </div>
 			            </div>
 			        </div>
@@ -280,7 +280,7 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum 
+                                I had a novice developer in mind when I wrote this book. This means I do not assume a large previous knowledge on testing from the reader, and I explain every single code snippet. Experts will also benefit from this book as every chapter also ends up with pragmatic discussions of how I have been applying these techniques in the real world.  
                             </div>
                         </div>
                     </div>
@@ -295,7 +295,7 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum 
+                                You can buy this book by clicking in the "buy" buttons you see in this page. This button will redirect you to the Manning page (the publisher of my book), but using a special link that makes me get a little bit more from the sell. Thanks for supporting me!
                             </div>
                         </div>
                     </div>

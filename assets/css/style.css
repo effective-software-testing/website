@@ -2110,3 +2110,29 @@ Footer Section
   }
 
 
+.article-item {
+  display:  flex;
+  font-size:  20px;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin-bottom: 1em;
+}
+
+.article-list {
+  margin: 0 auto;
+}
+
+.article-date {
+  font-size:  15px;
+}
+
+@media screen and (min-width: 800px) {
+    .post-row {
+      width:  80%;
+      margin:  auto;
+    }
+}
+
+.post-row li {
+  list-style-type: disc;
+}
