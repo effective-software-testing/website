@@ -2136,3 +2136,9 @@ Footer Section
 .post-row li {
   list-style-type: disc;
 }
+
+.post-row img {
+  max-width: 80%;
+  display: block;
+  margin: auto;
+}

@@ -9,13 +9,19 @@ They are not wrong! If your tests have no assertions, they will not be testing a
 
 Between the lines, people use such an argument to explain why you should not look at the coverage number blindly. After all, it can mislead you. I fully agree. Here, I believe the misconception is about how people see code coverage. For many of them, code coverage is about a number you should achieve. If your goal is to achieve 95% branch coverage, no matter what, you may end up writing less useful test cases. You end up gaming the metric.  
 
-However, that is _not_ how coverage coverage is meant to be used. Code coverage is an awesome tool to help you augment the tests you created based on the requirements of the program. I describe it better in the book, but let me try and summarize it. 
+However, that is _not_ how coverage coverage is meant to be used. Code coverage is an awesome tool to help you augment the tests you created based on the requirements of the program. I describe it better in the book (chapter 3 on structural testing), but let me try and summarize it. 
 
 Your initial set of tests should be derived from the specification of the program. What does it need to do? Are there corner cases based on the requirements? Are there special cases that the program needs to handle? And etc. Once you engineered all the tests you could see, you now may want to use coverage as a way "to see if you forgot something".
 
-Imagine the coverage report telling you that you missed a branch. When that happens, the question you should ask yourself is: _"why didn't I see this branch when I was deriving tests based on the requirements?"_. Maybe you simply forgot about it. Good, that's how coverage shows its value. Maybe you did have a reason not to test that case. That's good again, as the coverage made you reflect about it. 
+Imagine the coverage report telling you that you missed a branch. When that happens, the question you should ask yourself is: _"why didn't I see this when I was creating the tests?"_. Maybe you simply forgot about it. Good, that's how coverage shows its value. Maybe you did have a reason not to test that case. That's good again, as the coverage made you reflect about it. 
 
 Once you looked at everything that's covered and everything that's not covered, you are done! Note that I didn't really mention the code coverage magical number that everybody focuses when talking about it. The number really doesn't mean much once you start seeing coverage in this way. Achieving a high coverage number might be just a consequence of you doing that. But again, the purpose is different. If you leave a line uncovered there, it is because you reflect about it and decided not to cover it.
+
+See the image below, extracted from my book. The point 1 there is how you start. You create tests based on what you know about the behavior of the program. Then, you want to augment the tests. How do you do that? By looking at the implementation and looking for uncovered parts of the code. 
+
+![How structural testing and code coverage fit in the effective software testing way of working](assets/images/blog/systematic-structural-testing.png)
+
+Although the flow may look like you should only do structural testing once you are fully done with the tests from the specs of the program, in practice, this is a super iterative process, as you are the developer writing the production and the test code. The idea is still the same: coverage not as a number, but as a tool to understand if something else should be tested.
 
 Now, of course the code coverage number is not completely useless. Unless you have a very good reason for it, having a super low coverage may indicate that your test suite is poor. In other words, having 90% or 91% coverage makes no difference at all in practice; but having a 10% coverage is definitely an alarm.
 
