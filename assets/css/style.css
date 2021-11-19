@@ -2142,3 +2142,7 @@ Footer Section
   display: block;
   margin: auto;
 }
+
+.post-row ul {
+  margin-bottom: 1em;
+}
