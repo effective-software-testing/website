@@ -466,7 +466,7 @@ Header TopBar
 }
 
 /* ================
- BAnner
+ Banner
 ================*/
 .banner {
   padding: 60px 0px;
@@ -874,7 +874,7 @@ Testimonial
 }
 
 /*============
- pricing
+ Pricing
 ==============*/
 .pricing-item {
   text-align: center;
@@ -1168,9 +1168,15 @@ Blog Main
   margin-top: 20px;
   display: inline-block;
 }
+.mb-60 {
+  margin-bottom: 0px;
+}
+.article-item a {
+  margin-bottom: 10px;
+}
 
 /*==================
-Blog PAge 
+Blog Page
 ==================== */
 .main-content-area {
   padding: 100px 0px;
@@ -1388,7 +1394,7 @@ Blog pagination
 }
 
 /*==========================
-Single Blog Page 
+Single Blog Page
 ===========================*/
 .post-single h1, .post-single h2, .post-single h3, .post-single h4, .post-single h5, .post-single h6 {
   margin-bottom: 20px;
@@ -1761,7 +1767,7 @@ Footer Section
   Dark Home 1
   ===================== */
 
- 
+
   .dark-bg{
       background :#04122D;
   }
@@ -1798,15 +1804,15 @@ Footer Section
     background:rgba(255, 255, 255, 0.05);
   }
 
-  
+
   .border-top-light{
     border-top:1px solid rgba(255,255,255,.08);
   }
-   
+
   .border-bottom-light{
     border-bottom:1px solid rgba(255,255,255,.08);
   }
- 
+
 
   /*  Dark Typography  */
 
@@ -1840,7 +1846,7 @@ Footer Section
   .dark-theme .main-header{
     background :#04122D;
   }
-  
+
   .dark-theme .site-navigation{
     border-color: rgba(255, 255, 255, 0.05);
   }
@@ -1873,7 +1879,7 @@ Footer Section
   }
   .dark-theme .menu_fixed{
     background :#04122D;
-  } 
+  }
 
   .dark-theme .menu_fixed .header-socials a{
     border-color: rgba(255, 255, 255, 0.1);
@@ -1900,7 +1906,7 @@ Footer Section
     color: #fff;
   }
 
-  
+
 
   /* Dark banner 1 */
 
@@ -1925,7 +1931,7 @@ Footer Section
     color:#fff;
   }
 
- 
+
   /*  Dark section heading */
 
   .dark-bg .section-heading span{
@@ -1935,7 +1941,7 @@ Footer Section
     color:#d2d3d5;
   }
 
-  
+
 
   .dark-bg-light .section-heading a{
     color:#fff;
@@ -2047,7 +2053,7 @@ Footer Section
 
   /* Pricing */
 
- 
+
   .dark-bg .pricing-item {
     text-align: left;
     background: rgba(255,255,255,.08);
@@ -2060,7 +2066,7 @@ Footer Section
   .dark-bg .pricing-item .pricing-header{
     color:  rgba(255,255,255,.8);
   }
- 
+
   .dark-bg .pricing-item  p{
     color:rgba(255,255,255,.9);
   }
@@ -2069,7 +2075,7 @@ Footer Section
     margin-bottom: 20px;
   }
 
-  
+
   .dark-bg .pricing-item .pricing-features li{
     color: #fff;
   }
@@ -2123,8 +2129,8 @@ Footer Section
 
 .article-item {
   display:  flex;
-  font-size:  20px;
-  align-items: center;
+  font-size:  24px;
+  text-align: center;
   flex-direction: column-reverse;
   margin: 1em;
 }
@@ -2160,4 +2166,14 @@ Footer Section
 
 .post-row ul {
   margin-bottom: 1em;
+}
+
+/*  ==========================
+  Newsletter
+  ===================== */
+
+.cta-content iframe{
+  margin-top: 40px;
+  max-width: 480px;
+  width: 100%;
 }

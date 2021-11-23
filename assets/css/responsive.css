@@ -80,9 +80,20 @@
 }
 
 @media (max-width: 768px) {
+  .banner .banner-content {
+    text-align: center;
+    padding-bottom: 40px;
+  }
   .banner .banner-content h1 {
     font-size: 40px;
     line-height: 60px;
+  }
+  .banner .banner-content ul,
+  .banner .banner-content h1 {
+    text-align: left;
+  }
+  .cta-inner{
+    border-radius: 0px;
   }
   .header-contact li, .header-socials li {
     float: none;
@@ -108,10 +119,11 @@
   .client-logo {
     margin-bottom: 30px;
   }
-
   .navbar-collapse{
     width: 100%;
     top: 0px;
-}
-
+  }
+  .article-item a {
+    margin-bottom: 0px;
+  }
 }
