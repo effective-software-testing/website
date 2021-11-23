@@ -714,6 +714,17 @@ CTA Subscribe
   background: #222;
 }
 
+.cta-inner-post {
+  text-align: center;
+  padding: 70px 20px;
+  position: relative;
+  border-radius: 10px;
+  background: #ff9e9e;
+}
+
+
+
+
 .cta-inner .subheading2, .cta-inner h2 {
   color: #fff;
 }
