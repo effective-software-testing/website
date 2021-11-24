@@ -1,5 +1,5 @@
 ---
-title: "What makes a good test?"
+title: "What makes a good test code?"
 layout: post
 ---
 
