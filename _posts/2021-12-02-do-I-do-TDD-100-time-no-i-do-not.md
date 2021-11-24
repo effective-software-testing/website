@@ -1,5 +1,5 @@
 ---
-title: "TDD 100% of the time? Not if you ask me!"
+title: "Do I do TDD 100% of the time? No, I do not!"
 layout: post
 ---
 
