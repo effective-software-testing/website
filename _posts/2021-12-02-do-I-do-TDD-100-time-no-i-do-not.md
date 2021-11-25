@@ -29,4 +29,4 @@ Now, maybe you could have TDD'd this problem out; I could not. In the end, it do
 
 Over time, I started to prefer prototyping over TDD. Maybe because my mind already knows many of the patterns that make code more testable (which I discuss in Chapter 7 of my book) and so, although not really writing the test first, I feel I take similar (if not the same) decisions. 
 
-Deciding when to TDD or not will come with experience. Unfortunately, there is no silver bullet in software engineering (as far as we know).
+Deciding when to TDD or not will come with experience. Unfortunately, there is no silver bullet in software engineering (as far as we know). My book has a chapter on TDD, which I hope you find useful and pragmatic!
