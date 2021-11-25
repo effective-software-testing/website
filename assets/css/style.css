@@ -213,7 +213,6 @@ a:focus, a:visited {
 ul, ol {
   margin-bottom: 0px;
   list-style-type: none;
-  padding-left: 0px;
 }
 
 .pt-100 {
@@ -2146,6 +2145,7 @@ Footer Section
 
 .post-row p {
   margin: 1em;
+  width: 100%;
 }
 
 .post-row li {

@@ -66,6 +66,7 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
 
         </div>
 
+{% if page.hide_newsletter != true %}
 <section class="cta pb-100">
     <div class="container">
         <div class="row justify-content-center cta-inner-post">
@@ -73,14 +74,16 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
                 <div class="cta-content">
                     <h2 class="heading-title">If you liked this post, subscribe to our mailing list!</h2>
 
+
 {% include newsletter.html %}
+
 
                 </div>
             </div>
         </div>
     </div>
 </section> 
-
+{% endif %}
 
 
     </div>
