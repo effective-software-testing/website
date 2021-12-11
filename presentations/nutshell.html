@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Effective Software Testing</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/simple.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+<section>
+<h2>Effective Software Testing</h2>
+<h3>Maurício Aniche</h3>
+
+<img src="img/cover.png" style="width: 25%;">
+<p>https://www.effective-software-testing.com</p>
+</section>
+
+<section>
+<h2>Why did I write this book?</h2>
+
+<p class="fragment fade-in">To teach software testing @ Delft</p>
+<p class="fragment fade-in">Books were either too theoretical or too practical</p>
+
+</section>
+
+<section>
+<h2>What's the big novelty?</h2>
+
+<p>I see two of them</p>
+</section>
+
+<section>
+	Testing as a systematic procedure
+</section>
+
+
+<section>
+<p class="fragment fade-in">testing to find bugs</p> 
+<p class="fragment fade-in">and</p>
+<p class="fragment fade-in">testing to guide development</p>
+</section>
+
+<section>
+
+<h2>What do developers need to know?</h2>
+
+<ul>
+<li>Create tests that really find bugs</li>
+<li>Use code coverage in the right away</li>
+<li>When to go for unit, integration or system testing</li>
+<li>Use mocks and stubs to simplify your unit testing</li>
+<li>Design testable systems</li>
+<li>Write maintainable test code</li>
+</ul>
+
+</section>
+
+<section>
+<h2>Testing pyramid</h2>
+
+<img src="img/testing-pyramid.png" style="width:80%">
+</section>
+
+<section>
+<h2>Specification-based testing</h2>
+
+<img src="img/systematic-domain-testing.png" style="width:80%;">
+</section>
+
+<section>
+example here
+</section>
+
+<section>
+<h2>Code coverage the right way</h2>
+
+<p>Developers hate coverage because they are using it wrong!</p>
+</section>
+
+<section>
+<p>Coverage as a way to augment your tests</p>
+
+<img src="img/systematic-structural-testing.png" style="width: 70%">
+</section>
+
+<section>
+You can game the number, so a high number may not mean much, but a super low number means a lot...
+</section>
+
+<section>
+<h2>Mocking</h2>
+
+<ul>
+	<li>Support development</li>
+	<li>Simplify testing</li>
+</ul>
+</section>
+
+<section>
+<h2>Designing for testability</h2>
+
+<p>5 things to pay attention to</p>
+</section>
+
+<section>
+	Dependency injection
+</section>
+<section>
+	Separate infrastructure from domain code
+</section>
+<section>
+	Observability and controllability
+</section>
+<section>
+	<h2>Hexagonal architecture</h2>
+
+	<img src="img/hexagonal-architecture-example.png" style="width: 70%";>
+</section>
+
+<section>
+<h2>Larger tests</h2>
+
+<p>Integration and system test are also important</p>
+</section>
+
+<section>
+Key lesson: invest on infrastructure!
+</section>
+
+<section>
+<h2>Maintainable test code</h2>
+
+<p class="fragment fade-in"> Tests should be fast</p>
+<p class="fragment fade-in"> Tests should be cohesive, independent, and isolated</p>
+<p class="fragment fade-in"> Tests should have a reason to exist</p>
+<p class="fragment fade-in"> Tests should be repeatable and not flaky</p>
+<p class="fragment fade-in"> Tests should have strong assertions</p>
+</section>
+
+<section>
+<h2>Maintainable test code</h2>
+
+<p class="fragment fade-in"> Tests should break in case the behavior changes</p>
+<p class="fragment fade-in"> Tests should have a single and clear reason to fail</p>
+<p class="fragment fade-in"> Tests should be easy to write</p>
+<p class="fragment fade-in"> Tests should be easy to read</p>
+<p class="fragment fade-in"> Tests should be easy to change and evolve</p>
+
+</section>
+
+<section>
+<h2>What else?</h2>
+<p class="fragment fade-in">Property-based testing</p>
+<p class="fragment fade-in">TDD</p>
+<p class="fragment fade-in">Monitoring (not covered)</p>
+<p class="fragment fade-in">intelligent testing (not covered)</p>
+</section>
+
+<section>
+<h2>Wanna know more?</h2>
+
+<img src="img/cover.png" style="width: 25%;">
+<p>https://www.effective-software-testing.com</p>
+</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
