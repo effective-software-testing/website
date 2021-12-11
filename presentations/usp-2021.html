@@ -25,6 +25,20 @@
 </section>
 
 <section>
+<div class="r-hstack">
+	<div style="width: 50%;">
+		<img src="img/delft.jpeg" style="width: 90%;">
+		<p>Assistant Professor</p>
+	</div>
+	<div>
+<img src="img/adyen.png">
+<p>Tech Academy Lead</p>
+	</div>
+</div>
+
+</section>
+
+<section>
 <h2>Why did I write this book?</h2>
 
 <p class="fragment fade-in">To teach software testing @ Delft</p>
@@ -39,19 +53,20 @@
 </section>
 
 <section>
-	Testing as a systematic procedure
+	Testing as a systematic procedure!
 </section>
 
 
 <section>
-<p class="fragment fade-in">testing to find bugs</p> 
+	<h2>Testing as a tool...</h2>
+<p class="fragment fade-in">to find bugs</p> 
 <p class="fragment fade-in">and</p>
-<p class="fragment fade-in">testing to guide development</p>
+<p class="fragment fade-in">to guide development</p>
 </section>
 
 <section>
 
-<h2>What do developers need to know?</h2>
+<h2>Contemporary developer testing</h2>
 
 <ul>
 <li>Create tests that really find bugs</li>
@@ -77,7 +92,19 @@
 </section>
 
 <section>
-example here
+Finds occurrences of a pattern in a file.
+
+<pre>
+find &lt;pattern&gt; &lt;file&gt;
+</pre>
+
+<ul>
+<li class="fragment fade-in">Pattern size: empty, single character, many characters, longer than any line in the file.
+<li class="fragment fade-in"> Quoting: pattern is quoted, pattern is not quoted, pattern is improperly quoted.
+<li class="fragment fade-in"> File name: good file name, no file name with this name, omitted.
+<li class="fragment fade-in"> Occurrences in the file: none, exactly one, more than one.
+<li class="fragment fade-in"> Occurrences in a single line, assuming line contains the pattern: one, more than one.
+</ul>
 </section>
 
 <section>
@@ -106,6 +133,10 @@ You can game the number, so a high number may not mean much, but a super low num
 </section>
 
 <section>
+<img src="img/mock-types-you-do-not-own.png" style="width: 80%;">
+</section>
+
+<section>
 <h2>Designing for testability</h2>
 
 <p>5 things to pay attention to</p>
@@ -114,12 +145,80 @@ You can game the number, so a high number may not mean much, but a super low num
 <section>
 	Dependency injection
 </section>
+
+<section>
+<pre><code>
+public class VeryBadPaidShoppingCartsBatch {
+
+  public void processAll() {
+
+    ShoppingCartHibernateDao db = new ShoppingCartHibernateDao();
+    List&lt;ShoppingCart&gt; paidShoppingCarts = db.cartsPaidToday();
+    for (ShoppingCart cart : paidShoppingCarts) {
+
+      DeliveryCenterRestApi deliveryCenter =
+        new DeliveryCenterRestApi(); 
+      LocalDate estimatedDayOfDelivery = deliveryCenter.deliver(cart);
+
+      cart.markAsReadyForDelivery(estimatedDayOfDelivery); 
+      db.persist(cart); 
+
+      SMTPCustomerNotifier notifier = new SMTPCustomerNotifier(); 
+      notifier.sendEstimatedDeliveryNotification(cart);
+
+      SAPSoapWebService sap = new SAPSoapWebService();
+      sap.cartReadyForDelivery(cart);
+    }
+  }
+}
+</code>
+</pre>
+</section>
+
+<section>
+
+<pre><code>
+public class PaidShoppingCartsBatch {
+
+  private ShoppingCartRepository db;
+  private DeliveryCenter deliveryCenter;
+  private CustomerNotifier notifier;
+  private SAP sap;
+
+  public PaidShoppingCartsBatch(ShoppingCartRepository db,
+    [CA]DeliveryCenter deliveryCenter,
+                 CustomerNotifier notifier, SAP sap) {
+    this.db = db;
+    this.deliveryCenter = deliveryCenter;
+    this.notifier = notifier;
+    this.sap = sap;
+  }
+
+  public void processAll() {
+
+    List&lt;ShoppingCart&gt; paidShoppingCarts = db.cartsPaidToday();
+
+    for (ShoppingCart cart : paidShoppingCarts) { 
+
+      LocalDate estimatedDayOfDelivery = deliveryCenter.deliver(cart);
+
+      cart.markAsReadyForDelivery(estimatedDayOfDelivery);
+      db.persist(cart);
+
+      notifier.sendEstimatedDeliveryNotification(cart);
+
+      sap.cartReadyForDelivery(cart);
+    }
+  }
+}
+</code></pre>
+</section>
+</section>
+
 <section>
 	Separate infrastructure from domain code
 </section>
-<section>
-	Observability and controllability
-</section>
+
 <section>
 	<h2>Hexagonal architecture</h2>
 
@@ -127,13 +226,23 @@ You can game the number, so a high number may not mean much, but a super low num
 </section>
 
 <section>
-<h2>Larger tests</h2>
-
-<p>Integration and system test are also important</p>
+	Observability and controllability
 </section>
 
 <section>
-Key lesson: invest on infrastructure!
+<h2>Larger tests</h2>
+
+<p>Integration and system test are also super important!</p>
+</section>
+
+<section>
+<h2>Cost/Benefit analysis</h2>
+
+<p>What is the benefit of writing this as an integration test? How much is it going to cost me?</p>
+</section>
+
+<section>
+Key: invest on infrastructure!
 </section>
 
 <section>
