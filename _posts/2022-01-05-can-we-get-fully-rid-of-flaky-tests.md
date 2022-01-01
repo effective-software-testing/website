@@ -19,7 +19,7 @@ Some ideas on how to do it:
 * Detect flaky tests as soon as they happen. Gradle, for example, offers [features to report flaky tests](https://blog.gradle.org/gradle-flaky-test-retry-plugin).
 * Configure your test pipeline to re-run the flaky test a few times. If the test passes at least once, consider not breaking the build and not preventing engineers from continuing the development. 
 * Once a flaky test is detected, make sure the developers know about it. You may communicate the author of the test or the team or whatever your code ownership model recommends right away.
-* Let developers know which tests are flaky. In JUnit, you may want to tag them (`@Tag("flaky")`).
+* Let developers know which tests are flaky directly in the code. In JUnit, you may want to tag them (`@Tag("flaky")`).
 * If your testing execution pipeline is extensive, ensure that at least your unit test suite is free of flakyness. If you identify a flaky unit test, move it to another part of the pipeline.
 * Identify the root causes of the flakyness, and either fix them or document them. Make sure developers are aware of the causes and avoid them in the next tests they write.
 
