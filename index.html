@@ -191,7 +191,7 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
   {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
   {% for post in site.posts %}
     {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
-    {% if date >= now %}
+    {% if date <= now %}
     <li class="article-item">
       <time class="article-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
       <a href="{{ post.url }}">{{ post.title }}</a>
