@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+        integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark-reasonable.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .pure-button {
+            border-radius: 10px;
+            color: white;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-run {
+            background: rgb(28, 184, 65);
+            font-size: 125%;
+        }
+
+        .button-delete {
+            background: rgb(202, 60, 60);
+
+        }
+
+        @media screen and (max-width: 80em) {
+            .reverse-lower-than-xl {
+                display: flex;
+                flex-flow: column-reverse;
+            }
+        }
+
+        @media screen and (min-width: 80em) {
+            .margin-xl-1 {
+                margin: 1em;
+            }
+
+            .padding-xl-1 {
+                padding: 1em;
+            }
+
+            .padding-xl-2 {
+                padding: 2em;
+            }
+        }
+
+        .padding-1 {
+            padding: 1em;
+        }
+
+        .test-element {
+            background-color: lightcyan
+        }
+
+        .test-holder-success>.test-metatest-success>.test-element {
+            background-color: aquamarine;
+            box-shadow: .5rem .5rem 1rem rgba(0,0,0,.4);
+        }
+
+        .test-fail>.test-element {
+            background-color: lightcoral;
+            box-shadow: .5rem .5rem 1rem rgba(0,0,0,.4);
+        }
+    </style>
+</head>
+
+<body style="background-color:honeydew;">
+    <div class="pure-g reverse-lower-than-xl padding-1 padding-xl-2">
+        <div class="pure-u-1 pure-u-xl-3-5">
+            <pre style="max-height: 90vh; overflow: auto; border-radius: 30px;"><code class="language-javascript">/**
+* This function receives two numbers, `left` and `right`, both represented as an array of digits.
+* It adds these numbers and returns the result also as an array of digits.
+*
+* For example, if you want to add the numbers 23 and 42, you would need to create
+* a (left) array with two elements [2,3] and a (right) array with two elements [4,2].
+* 23+42 = 65, so the program would produce another array with two elements [6,5]
+*
+* [2,3] + [4,2] = [6,5]
+*
+* Each element in the left and right arrays should be a number from [0-9].
+* An exception is thrown in case this pre-condition does not hold.
+*
+* @param {Array} left  a list containing the left number. Null returns null, empty means 0.
+* @param {Array} right a list containing the right number. Null returns null, empty means 0.
+* @return {boolean} the sum of left and right, as a list
+*/
+function add(left, right) {
+    // if any is null, return null
+    if (left == null || right == null)
+        return null;
+
+    // reverse the numbers so that the least significant digit goes to the left.
+    left = left.reverse();
+    right = right.reverse();
+
+    let result = [];
+
+    // while there's a digit, keep summing them
+    // if there's carry, take the carry into consideration
+    let carry = 0;
+    for (let i = 0; i &lt; Math.max(left.length, right.length); i++) {
+
+        let leftDigit = left.length &gt; i ? left[i] : 0;
+        let rightDigit = right.length &gt; i ? right[i] : 0;
+
+        if (leftDigit &lt; 0 || leftDigit &gt; 9 || rightDigit &lt; 0 || rightDigit &gt; 9)
+            throw 'An element is not a digit!';
+
+        let sum = leftDigit + rightDigit + carry;
+
+        // add to the beginning of the resulting array
+        result.unshift(sum % 10);
+        carry = Math.floor(sum / 10);
+    }
+
+    // if there's some leftover carry, add it to the final number
+    if (carry &gt; 0)
+        result.unshift(carry);
+
+    // remove leading zeroes from the result
+    while (result.length &gt; 1 &amp;&amp; result[0] == 0)
+        result.shift();
+
+    return result;
+}</code></pre>
+        </div>
+        <div class="pure-u-1 pure-u-xl-2-5">
+            <div class="margin-xl-1" style="background-color: rgb(199, 243, 225); border-radius: 30px; padding: 1em; max-height: 87vh; overflow: auto;">
+                <h3 style="width: 100%; text-align: center;">Try writing some tests for the code shown here</h3>
+                <div id="testHolder" class="margin-xl-1"></div>
+                <div style="width: 100%; text-align: center;">
+                    <button class="pure-button pure-button-primary margin-xl-1" style="width: 80%;"
+                        onclick="addTestElement()">
+                        <i class="fas fa-plus"></i>
+                        Add test
+                    </button>
+                </div>
+                <div style="width: 100%; text-align: center;">
+                    <button class="pure-button button-run" style="margin: 2em;" onclick="runTests()">
+                        <i class="fa-solid fa-play"></i>
+                        Run tests
+                    </button>
+                </div>
+                <p id="result"
+                    style="margin: 1em; padding: 1em; border-radius: 10px; background-color:azure; text-align: center;">
+                    After you run your tests, the result will appear here.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>hljs.highlightAll();</script>
+
+    <script>
+
+        // Correct implementation
+
+        function addCorrect(left, right) {
+            // if any is null, return null
+            if (left == null || right == null)
+                return null;
+
+            // reverse the numbers so that the least significant digit goes to the left.
+            left = left.reverse();
+            right = right.reverse();
+
+            let result = [];
+
+            // while there's a digit, keep summing them
+            // if there's carry, take the carry into consideration
+            let carry = 0;
+            for (let i = 0; i < Math.max(left.length, right.length); i++) {
+
+                let leftDigit = left.length > i ? left[i] : 0;
+                let rightDigit = right.length > i ? right[i] : 0;
+
+                if (leftDigit < 0 || leftDigit > 9 || rightDigit < 0 || rightDigit > 9)
+                    throw 'An element is not a digit!';
+
+                let sum = leftDigit + rightDigit + carry;
+
+                // add to the beginning of the resulting array
+                result.unshift(sum % 10);
+                carry = Math.floor(sum / 10);
+            }
+
+            // if there's some leftover carry, add it to the final number
+            if (carry > 0)
+                result.unshift(carry);
+
+            // remove leading zeroes from the result
+            while (result.length > 1 && result[0] == 0)
+                result.shift();
+
+            return result;
+        }
+
+        // Buggy implementation (meta test)
+
+        function addMetaTest(left, right) {
+            // if any is null, return null
+            if (left == null || right == null)
+                return null;
+
+            // reverse the numbers so that the least significant digit goes to the left.
+            left = left.reverse();
+            right = right.reverse();
+
+            let result = [];
+
+            // while there's a digit, keep summing them
+            // if there's carry, take the carry into consideration
+            let carry = 0;
+            for (let i = 0; i < Math.max(left.length, right.length); i++) {
+
+                let leftDigit = left.length > i ? left[i] : 0;
+                let rightDigit = right.length > i ? right[i] : 0;
+
+                if (leftDigit < 0 || leftDigit > 9 || rightDigit < 0 || rightDigit > 9)
+                    throw 'An element is not a digit!';
+
+                let sum = leftDigit + rightDigit + carry;
+
+                // add to the beginning of the resulting array
+                result.unshift(sum % 10);
+                carry = Math.floor(sum / 10);
+            }
+
+            // BUG: carry is not applied
+
+            // if there's some leftover carry, add it to the final number
+            // if (carry > 0)
+            //     result.unshift(carry);
+
+            // remove leading zeroes from the result
+            while (result.length > 1 && result[0] == 0)
+                result.shift();
+
+            return result;
+        }
+
+
+        // Code to run the test suite
+
+        function addTestElement(l = 0, r = 0, res = 0) {
+            let child = document.createElement('div');
+
+            child.innerHTML = `
+            <div class="pure-form test-element" style="width: 100%; text-align: center; border-radius: 20px; margin-bottom: 1em;">
+                <div style="padding: 1em;">
+                    <div class="pure-g">
+                        <div class="pure-u-7-24" style="align-self: flex-end;">
+                            <label>left:</label>
+                            <div style="padding: 0.1em;">
+                                <input type="number" min="0" value="${l}" class="left" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="pure-u-7-24" style="align-self: flex-end;">
+                            <label>right:</label>
+                            <div style="padding: 0.1em;">
+                                <input type="number" min="0" value="${r}" class="right" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="pure-u-7-24" style="align-self: flex-end;">
+                            <label>expected result:</label>
+                            <div style="padding: 0.1em;">
+                                <input type="number" min="0" value="${res}" class="expected" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="pure-u-3-24" style="align-self: flex-start;">
+                            <button class="pure-button button-delete" onclick="removeTestElement(this)"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+
+            document.getElementById('testHolder').appendChild(child);
+        }
+
+        function removeTestElement(btn) {
+            btn.parentNode.parentNode.parentNode.parentNode.parentNode.remove();
+        }
+
+        function arrayEqual(arr1, arr2) {
+            return arr1.length === arr2.length && arr1.every((e, i) => e === arr2[i]);
+        }
+
+        function runTests() {
+            let testHolder = document.getElementById('testHolder');
+
+            let passesCorrect = true;
+
+            let failsOnMetaTest = false;
+
+            for (let childNode of testHolder.childNodes) {
+                let left = childNode.getElementsByClassName('left')[0].value.split("").map(p => parseInt(p));
+                let right = childNode.getElementsByClassName('right')[0].value.split("").map(p => parseInt(p));
+                let expected = childNode.getElementsByClassName('expected')[0].value.split("").map(p => parseInt(p));
+
+                // check if the test passes on the correct implementation
+                let actualCorrect = addCorrect(left.map(x => x), right.map(x => x));
+                let actualMetaTest = addMetaTest(left.map(x => x), right.map(x => x));
+
+                let currentPassesCorrect = arrayEqual(expected, actualCorrect);
+                let currentPassesMetaTest = arrayEqual(expected, actualMetaTest);
+
+                if (!currentPassesCorrect) {
+                    childNode.classList.add('test-fail');
+                    passesCorrect = false;
+                } else {
+                    childNode.classList.remove('test-fail');
+                }
+
+                if (!currentPassesMetaTest) {
+                    childNode.classList.add('test-metatest-success');
+                    failsOnMetaTest = true;
+                } else {
+                    childNode.classList.remove('test-metatest-success');
+                }
+            }
+
+            let result;
+            let colour
+
+            if (passesCorrect) {
+                if (failsOnMetaTest) {
+                    result = "Congratulations, you found a bug - your tests can detect if carrying is not applied properly!"
+                    colour = 'aquamarine';
+                } else {
+                    result = "Your tests pass.";
+                    colour = 'azure';
+                }
+
+                testHolder.classList.add('test-holder-success');
+            } else {
+                result = "Some of your tests do not pass. Check your inputs and outputs.";
+                colour = 'lightcoral';
+
+                testHolder.classList.remove('test-holder-success');
+            }
+
+            let resultElement = document.getElementById('result');
+
+            resultElement.textContent = result;
+
+            resultElement.style.backgroundColor = colour;
+        }
+
+        (function () { addTestElement(1, 2, 3) })();
+    </script>
+
+</body>
+
+</html>
