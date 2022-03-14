@@ -13,7 +13,7 @@ Why not? Because, due to the simplicity of the method under test, I can quickly 
 
 My knowledge in testing overall does help me, so, if I see an if statement, I automatically think about branch coverage and I know I have to perform boundary testing on the condition.
 
-The beauty of the more formal and systematic specification and boundary testing technique I discuss in the book is that **I can go for it whenever I feel I need it**. If I feel I'm uncomfortable and I need more help testing, I go for it.
+The beauty of the more formal and systematic specification and boundary testing techniques I discuss in the book is that **I can go for it whenever I feel I need it**. If I'm uncomfortable and I need more help testing, I go for it.
 
 
 *References:*
