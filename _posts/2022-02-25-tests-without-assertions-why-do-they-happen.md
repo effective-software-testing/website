@@ -25,3 +25,4 @@ You may spend some time building it, but once such an infrastructure is in place
 
 To sum up: the lack of observability may cause developers to write tests without assertions. A good test infrastructure is key to solve the issue. 
 
+
