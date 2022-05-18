@@ -6,7 +6,7 @@ layout: post
 
 One of my favorite testing techniques is _specification-based testing_. I learned it more formally a bit later in my career, and since then, I feel my tests are just much better because of it. I explain it already in chapter 2 of my book. However, a common misunderstanding for those that are just introduced to the topic is to believe that specification-based testing is all about following a recipe: _oh, I see an array, let me try a null array, an empty array, an array with one element, and an array with multiple elements, and I'm done!_
 
-I can see where this misconception comes from. We are very used to do testing in an ad-hoc manner. The next test we write is just the next thing that comes to mind. My colleagues and I have even observed such behavior in a laboratory experiment [1]. 
+I can see where this misconception comes from. We are very used to do testing in an ad-hoc manner. The next test we write is just the next thing that comes to mind. My colleagues and I have even observed such behavior in a laboratory experiment with developers [1]. 
 
 Let me assure you that specification-based testing **is not** about following a recipe. **Specification-based testing is all about using the requirements of the program in a systematic way to derive test cases.**
 
