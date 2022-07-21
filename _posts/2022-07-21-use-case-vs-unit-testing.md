@@ -27,7 +27,7 @@ On the other hand, you can test large parts of feature, say, 3, 4, 5 classes alt
 
 The disadvantages are:
 
-* Ues case tests are harder to be written, and in most cases, you will need some infrastructure in place so that developers are productive in writing them. Think of ways of putting data into the database, injecting mocked components in deeper places, etc.
+* Use case tests are harder to be written, and in most cases, you will need some infrastructure in place so that developers are productive in writing them. Think of ways of putting data into the database, injecting mocked components in deeper places, etc.
 
 * Exercising every single branch of the implementation of the so many components that compose the feature might be costly. A test that could be written in 30 seconds via unit testing now takes minutes. 
 
