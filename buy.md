@@ -6,5 +6,5 @@ hide_newsletter: true
 ---
 
 <script>
-location.href = '{{ page.keywords }}';
+location.href = '{{ site.buy_url }}';
 </script>
