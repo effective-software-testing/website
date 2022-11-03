@@ -9,4 +9,6 @@ permalink: /:title
 destination: _site
 future: false
 
+buy_url: "https://www.manning.com/books/effective-software-testing?utm_source=aniche&utm_medium=affiliate&utm_campaign=book_aniche_effective_11_16_21&a_aid=aniche&a_bid=6e66ba23"
+
 exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
