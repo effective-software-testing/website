@@ -1,6 +1,6 @@
 ---
 title: "Buy"
-layout: post
+layout: redirect
 permalink: /buy
 hide_newsletter: true
 ---
