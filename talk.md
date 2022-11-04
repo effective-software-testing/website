@@ -9,4 +9,7 @@ hide_newsletter: false
 
 [Link to Google Docs](https://docs.google.com/presentation/d/17MVXOgCQ9J_pBvwuko12GvUvgIbPv0716nY540eEM_A/edit?usp=sharing).
 
-(The slides might differ a bit from the version you saw, as I keep improving them!)
+Some notes:
+
+* The slides might differ a bit from the version you watched me present, as I keep improving them!
+* Feel free to use the **au35ani** discount code (35% discount on the book!)
