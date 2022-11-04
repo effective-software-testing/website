@@ -11,5 +11,6 @@ hide_newsletter: false
 
 Some notes:
 
-* The slides might differ a bit from the version you watched me present, as I keep improving them!
-* Feel free to use the **au35ani** discount code (35% discount on the book!)
+* The slides might differ a bit from the version you watched me present, as I keep improving them.
+* Feel free to use the **au35ani** discount code (35% discount on the book).
+* Subscribe to my (free) newsletter, pretty please! :)
