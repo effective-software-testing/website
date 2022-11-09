@@ -191,6 +191,7 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
             <div class="col-lg-8">
                 <div class="center-heading mb-60">
                     <h3 class="heading-title">Articles</h3>
+                    (see the full list at <a href="/articles">the articles page</a>)
                 </div>
             </div>
         </div>
@@ -198,7 +199,7 @@ title: "Effective Software Testing: A Developer's Guide, by Maurício Aniche"
 
 <ul class="article-list">
   {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
-  {% for post in site.posts %}
+  {% for post in site.posts limit: 4 %}
     {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
     {% if date <= now %}
     <li class="article-item">
