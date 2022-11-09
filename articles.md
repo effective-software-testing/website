@@ -5,16 +5,8 @@ permalink: /articles
 hide_newsletter: false
 ---
 
-    <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-lg-8">
-                <div class="center-heading mb-60">
-                    <h3 class="heading-title">Articles</h3>
-                    (see the full list at <a href="/articles">the articles page</a>)
-                </div>
-            </div>
-        </div>
-        <div class="row">
+Want to receive these articles directly in your inbox? Subscribe to the newsletter!
+
 
 <ul class="article-list">
   {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
@@ -28,7 +20,3 @@ hide_newsletter: false
     {% endif %}
   {% endfor %}
 </ul>
-
-
-        </div>
-    </div>
