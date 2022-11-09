@@ -12,10 +12,17 @@ I have been using my own book to teach software testing at Delft University of T
 We will discuss:
 
 * How to flip the classroom using my book as the main source of study
-* How to make use of our 50+ coding exercises together with our open-source feedback tool
+* How to make use of our 50+ coding exercises together with our open-source grading tool
 * How to engage students with pragmatic discussions and live coding
 * How to obtain a nice discount for your students to buy the book
-* How to properly assess your students
 
+This book is currently being used by: 
 
+* Delft University of Technology ([Dr. Maurício Aniche](https://www.mauricioaniche.com)), the author of the book
+* University of Zurich ([Prof. Dr. Alberto Bacchelli](https://sback.it))
+* PUC-RS, Brazil ([Prof. Dr. Bernardo Copstein](https://www.linkedin.com/in/bernardo-copstein-3226095))
+* Universidade de Passo Fundo, Brazil ([Prof. Dr. Alexandre Lazaretti Zanatta](https://www.linkedin.com/in/alexandre-lazaretti-zanatta-b7a461115/))
+* Università degli Studi di Bari ([Dr. Azzurra Ragone](https://www.linkedin.com/in/azzurraragone/))
+* University of Victoria, Canada ([Prof Dr. Margaret-Anne Storey](https://www.margaretstorey.com/))
 
+If you are using this book, let me know, and I'll add you here!
