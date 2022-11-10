@@ -18,11 +18,12 @@ We will discuss:
 
 This book is currently being used by: 
 
-* Delft University of Technology ([Dr. Maurício Aniche](https://www.mauricioaniche.com)), the author of the book
-* University of Zurich ([Prof. Dr. Alberto Bacchelli](https://sback.it))
-* PUC-RS, Brazil ([Prof. Dr. Bernardo Copstein](https://www.linkedin.com/in/bernardo-copstein-3226095))
+* Delft University of Technology, Netherlands ([Dr. Maurício Aniche](https://www.mauricioaniche.com)), the author of the book
+* University of Zürich, Switzerland ([Prof. Dr. Alberto Bacchelli](https://sback.it))
+* Pontifícia Universidade Católica - Rio Grande do Sul, Brazil ([Prof. Dr. Bernardo Copstein](https://www.linkedin.com/in/bernardo-copstein-3226095))
 * Universidade de Passo Fundo, Brazil ([Prof. Dr. Alexandre Lazaretti Zanatta](https://www.linkedin.com/in/alexandre-lazaretti-zanatta-b7a461115/))
-* Università degli Studi di Bari ([Dr. Azzurra Ragone](https://www.linkedin.com/in/azzurraragone/))
+* Università degli Studi di Bari, Italy ([Dr. Azzurra Ragone](https://www.linkedin.com/in/azzurraragone/))
 * University of Victoria, Canada ([Prof Dr. Margaret-Anne Storey](https://www.margaretstorey.com/))
+* Carnegie Mellon University, USA ([Prof. Michael Hilton](https://www.cs.cmu.edu/~mhilton/))
 
 If you are using this book, let me know, and I'll add you here!
