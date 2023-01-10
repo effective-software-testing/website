@@ -26,5 +26,6 @@ This book is currently being used by:
 * University of Victoria, Canada ([Prof Dr. Margaret-Anne Storey](https://www.margaretstorey.com/))
 * Carnegie Mellon University, USA ([Dr. Michael Hilton](https://www.cs.cmu.edu/~mhilton/))
 * University of São Paulo, Brazil ([Prof. Dr. Alfredo Goldman](https://www.ime.usp.br/~gold/new/))
+* University of Tirana, Albania ([Dr. Klesti Hoxha](https://klestihoxha.al))
 
 If you are using this book, let me know, and I'll add you here!
