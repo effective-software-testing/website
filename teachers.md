@@ -28,5 +28,6 @@ This book is currently being used by:
 * University of São Paulo, Brazil ([Prof. Dr. Alfredo Goldman](https://www.ime.usp.br/~gold/new/))
 * University of Tirana, Albania ([Dr. Klesti Hoxha](https://klestihoxha.al))
 * Radboud University, the Netherlands ([Dr. Bin Lin](https://binlin.info/))
+* University of Tübingen, Germany ([Dr. Jonathan Brachthäuser](https://se.cs.uni-tuebingen.de/group/))
 
 If you are using this book, let me know, and I'll add you here!
