@@ -50,7 +50,7 @@ If you are using this book, let me know, and I'll add you here!
       ['Brazil', 100],
       ['Italy', 100],
       ['Canada', 100],
-      ['USA', 100],
+      ['United States of America', 100],
       ['Albania', 100],
       ['Germany', 100],
       ['Switzerland', 100]
