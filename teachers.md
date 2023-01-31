@@ -32,3 +32,34 @@ This book is currently being used by:
 * École de Technologie Supérieure (l'ÉTS), Canada ([Dr. Fabio Petrillo](https://www.etsmtl.ca/en/research/professors/fpetrillo/))
 
 If you are using this book, let me know, and I'll add you here!
+
+<div id="regions_div" style="width: 900px; height: 500px;"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+  google.charts.load('current', {
+    'packages':['geochart'],
+  });
+  google.charts.setOnLoadCallback(drawRegionsMap);
+
+  function drawRegionsMap() {
+    var data = google.visualization.arrayToDataTable([
+      ['Country', 'Popularity'],
+      ['Netherlands', 100],
+      ['Brazil', 100],
+      ['Italy', 100],
+      ['Canada', 100],
+      ['USA', 100],
+      ['Albania', 100],
+      ['Germany', 100],
+      ['Switzerland', 100]
+    ]);
+
+    var options = {};
+
+    var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+    chart.draw(data, options);
+  }
+</script>
