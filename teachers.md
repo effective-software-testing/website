@@ -29,5 +29,6 @@ This book is currently being used by:
 * University of Tirana, Albania ([Dr. Klesti Hoxha](https://klestihoxha.al))
 * Radboud University, the Netherlands ([Dr. Bin Lin](https://binlin.info/))
 * University of Tübingen, Germany ([Dr. Jonathan Brachthäuser](https://se.cs.uni-tuebingen.de/group/))
+* École de Technologie Supérieure (l'ÉTS), Canada ([Dr. Fabio Petrillo](https://www.etsmtl.ca/en/research/professors/fpetrillo/))
 
 If you are using this book, let me know, and I'll add you here!
