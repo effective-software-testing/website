@@ -30,6 +30,7 @@ This book is currently being used by:
 * Radboud University, the Netherlands ([Dr. Bin Lin](https://binlin.info/))
 * University of Tübingen, Germany ([Dr. Jonathan Brachthäuser](https://se.cs.uni-tuebingen.de/group/))
 * École de Technologie Supérieure (l'ÉTS), Canada ([Dr. Fabio Petrillo](https://www.etsmtl.ca/en/research/professors/fpetrillo/))
+* State University of Feira de Santana, Brazil ([Dr. Larissa Rocha](https://pgcc.uefs.br/sobre/docentes/larissa))
 
 <div id="regions_div" style="width: 900px; height: 500px;"></div>
 
