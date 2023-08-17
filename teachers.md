@@ -5,18 +5,30 @@ permalink: /for-teachers
 hide_newsletter: true
 ---
 
-Are you interested in using this book in your classroom? Universities are more and more focusing on software testing. Unfortunately, most books out there are either too theoretical or too practical. The _Effective Software Testing: A Developer's Guide_ book gives students a pragmatic and solid view on modern software testing practices. 
+Are you interested in using this book in your classroom? Universities are more and more focusing on software testing. Unfortunately, most books out there are either too theoretical or too practical. _Effective Software Testing: A Developer's Guide_ gives students a pragmatic and solid view on modern software testing practices. 
 
-I have been using my own book to teach software testing at Delft University of Technology. I can help you in understanding how to adopt this book. Send me an e-mail and we schedule a conversation about it. 
+## How I've been using it
 
-We will discuss:
+I've been using my own book to teach software testing at the Delft University of Technology. 
 
-* How to flip the classroom using my book as the main source of study
-* How to make use of our 50+ coding exercises together with our open-source grading tool
-* How to engage students with pragmatic discussions and live coding
-* How to obtain a nice discount for your students to buy the book
+The course is stuctured as follows:
 
-This book is currently being used by: 
+* I follow the flipped classroom model, where students read the chapters before the lecture. In the lecture, I then engage students through debates, discussions, live coding, and exercises. You can read [my blog post about flipped classroom](https://www.mauricioaniche.com/blog/what-did-i-learn-from-flipping-my-classroom/). All [my support slides](https://drive.google.com/drive/folders/1rFcF4Ia32q-8NOKIcBm3xzVE2tMm8U_J?usp=drive_link) are available in Google Docs, feel free to use them as inspiration.
+
+* In the lab, students solve multiple exercises, each focusing on a technique discussed in the book: specification-based and structural testing, mocking, property-based testing, web testing, and SQL testing. We use our in-house tool called [Andy](https://github.com/SERG-Delft/andy) to give students automated feedback. You can use the tool or just the exercises. Everything, including solutions, are in the repository. 
+
+* Students go through a midterm and a final exam. Both of them have a similar structure. They are mostly coding exams where I give students questions similar to the ones they've seen during the practice. I often complement the coding questions with multiple choice questions to also capture their theoretical knowledge.
+
+In terms of schedule, my course has nine weeks and around 14 lectures of 1.5 hours during these weeks. I try to never let them have to read more than 2 chapters per week, otherwise it's too intense for them. I go through the chapters in the order of the book. 
+
+Although it's mostly one chapter per lecture, sometimes I combine two chapters in one lecture. For example, I have been able to talk about design by contracts and property-based testing in a single lecture. Test code smells and web testing also often fits in one lecture.
+
+As a complement, I invite guests to talk about their experiences with testing in between the lectures. Guest lectures are highly appreciated by the students. I often have 3-4 guests per edition of the course.
+
+I hope this inspires you in creating your own testing course. Feel free to drop me an e-mail in case of more questions!
+
+
+## Who's using it?
 
 * Delft University of Technology, Netherlands ([Dr. Maurício Aniche](https://www.mauricioaniche.com)), the author of the book
 * University of Zürich, Switzerland ([Prof. Dr. Alberto Bacchelli](https://sback.it))
