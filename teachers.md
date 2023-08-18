@@ -44,6 +44,7 @@ I hope this inspires you in creating your own testing course. Feel free to drop 
 * École de Technologie Supérieure (l'ÉTS), Canada ([Dr. Fabio Petrillo](https://www.etsmtl.ca/en/research/professors/fpetrillo/))
 * State University of Feira de Santana, Brazil ([Dr. Larissa Rocha](https://pgcc.uefs.br/sobre/docentes/larissa))
 * Colgate University, USA ([Dr. Georgiana Haldeman](https://www.colgate.edu/about/directory/ghaldeman))
+* King Saud University, Saudi Arabia (Dr. Abdulaziz Alshayban)
 
 <div id="regions_div" style="width: 900px; height: 500px;"></div>
 
@@ -67,7 +68,8 @@ If you are using this book, let me know, and I'll add you here!
       ['United States', 100],
       ['Albania', 100],
       ['Germany', 100],
-      ['Switzerland', 100]
+      ['Switzerland', 100],
+      ['Saudi Arabia', 100]
     ]);
 
     var options = {};
