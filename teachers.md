@@ -45,6 +45,7 @@ I hope this inspires you in creating your own testing course. Feel free to drop 
 * State University of Feira de Santana, Brazil ([Dr. Larissa Rocha](https://pgcc.uefs.br/sobre/docentes/larissa))
 * Colgate University, USA ([Dr. Georgiana Haldeman](https://www.colgate.edu/about/directory/ghaldeman))
 * King Saud University, Saudi Arabia (Dr. Abdulaziz Alshayban)
+* Münster University of Applied Sciences (Prof. Dr. Moritz Sinn)
 
 <div id="regions_div" style="width: 900px; height: 500px;"></div>
 
