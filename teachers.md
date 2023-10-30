@@ -46,6 +46,7 @@ I hope this inspires you in creating your own testing course. Feel free to drop 
 * Colgate University, USA ([Dr. Georgiana Haldeman](https://www.colgate.edu/about/directory/ghaldeman))
 * King Saud University, Saudi Arabia (Dr. Abdulaziz Alshayban)
 * Münster University of Applied Sciences (Prof. Dr. Moritz Sinn)
+* University of Waterloo, Canada ([Dr. Weiyi (Ian) Shang](https://ece.uwaterloo.ca/~wshang/))
 
 <div id="regions_div" style="width: 900px; height: 500px;"></div>
 
