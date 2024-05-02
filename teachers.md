@@ -35,7 +35,7 @@ I hope this inspires you in creating your own testing course. Feel free to drop 
 * Pontifícia Universidade Católica - Rio Grande do Sul, Brazil ([Prof. Dr. Bernardo Copstein](https://www.linkedin.com/in/bernardo-copstein-3226095))
 * Universidade de Passo Fundo, Brazil ([Prof. Dr. Alexandre Lazaretti Zanatta](https://www.linkedin.com/in/alexandre-lazaretti-zanatta-b7a461115/))
 * Università degli Studi di Bari, Italy ([Dr. Azzurra Ragone](https://www.linkedin.com/in/azzurraragone/))
-* University of Victoria, Canada ([Prof Dr. Margaret-Anne Storey](https://www.margaretstorey.com/))
+* University of Victoria, Canada ([Prof Dr. Margaret-Anne Storey](https://www.margaretstorey.com/) and [Dr. Navneet Kaur Popli](https://www.linkedin.com/in/dr-navneet-kaur-popli/))
 * Carnegie Mellon University, USA ([Dr. Michael Hilton](https://www.cs.cmu.edu/~mhilton/))
 * University of São Paulo, Brazil ([Prof. Dr. Alfredo Goldman](https://www.ime.usp.br/~gold/new/))
 * University of Tirana, Albania ([Dr. Klesti Hoxha](https://klestihoxha.al))
