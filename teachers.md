@@ -45,8 +45,9 @@ I hope this inspires you in creating your own testing course. Feel free to drop 
 * State University of Feira de Santana, Brazil ([Dr. Larissa Rocha](https://pgcc.uefs.br/sobre/docentes/larissa))
 * Colgate University, USA ([Dr. Georgiana Haldeman](https://www.colgate.edu/about/directory/ghaldeman))
 * King Saud University, Saudi Arabia (Dr. Abdulaziz Alshayban)
-* Münster University of Applied Sciences (Prof. Dr. Moritz Sinn)
+* Münster University of Applied Sciences, Germany (Prof. Dr. Moritz Sinn)
 * University of Waterloo, Canada ([Dr. Weiyi (Ian) Shang](https://ece.uwaterloo.ca/~wshang/))
+* University of Namur, Belgium ([Dr. Xavier Devroey](https://xdevroey.be/) and [Dr. Benoît Vanderose](https://snail.info.unamur.be/author/benoit-vanderose/))
 
 <div id="regions_div" style="width: 900px; height: 500px;"></div>
 
@@ -64,6 +65,7 @@ If you are using this book, let me know, and I'll add you here!
     var data = google.visualization.arrayToDataTable([
       ['Country', 'Popularity'],
       ['Netherlands', 100],
+      ['Belgium', 100],
       ['Brazil', 100],
       ['Italy', 100],
       ['Canada', 100],
