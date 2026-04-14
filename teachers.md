@@ -48,6 +48,9 @@ I hope this inspires you in creating your own testing course. Feel free to drop 
 * Münster University of Applied Sciences, Germany (Prof. Dr. Moritz Sinn)
 * University of Waterloo, Canada ([Dr. Weiyi (Ian) Shang](https://ece.uwaterloo.ca/~wshang/))
 * University of Namur, Belgium ([Dr. Xavier Devroey](https://xdevroey.be/) and [Dr. Benoît Vanderose](https://snail.info.unamur.be/author/benoit-vanderose/))
+* Institute of Science Tokyo, Japan ([Prof. Dr. Shinpei Hayashi](https://se.comp.isct.ac.jp/~hayashi/))
+* Nara Institute of Science and Technology, Japan ([Dr. Yutaro Kashiwa](https://sdlab.naist.jp/en/authors/yutaro-kashiwa/))
+* University of British Columbia, Canada ([Dr. Gema Rodríguez-Pérez](https://cmps.ok.ubc.ca/about/contact/gema-rodriguez-perez/))
 
 <div id="regions_div" style="width: 900px; height: 500px;"></div>
 
@@ -73,7 +76,8 @@ If you are using this book, let me know, and I'll add you here!
       ['Albania', 100],
       ['Germany', 100],
       ['Switzerland', 100],
-      ['Saudi Arabia', 100]
+      ['Saudi Arabia', 100],
+      ['Japan', 100]
     ]);
 
     var options = {};
