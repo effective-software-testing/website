@@ -37,6 +37,7 @@ I hope this inspires you in creating your own testing course. Feel free to drop 
 * Università degli Studi di Bari, Italy ([Dr. Azzurra Ragone](https://www.linkedin.com/in/azzurraragone/))
 * University of Victoria, Canada ([Prof Dr. Margaret-Anne Storey](https://www.margaretstorey.com/) and [Dr. Navneet Kaur Popli](https://www.linkedin.com/in/dr-navneet-kaur-popli/))
 * Carnegie Mellon University, USA ([Dr. Michael Hilton](https://www.cs.cmu.edu/~mhilton/))
+* Carnegie Mellon University, USA ([Dr. Eunsuk Kang](https://eskang.github.io/))
 * University of São Paulo, Brazil ([Prof. Dr. Alfredo Goldman](https://www.ime.usp.br/~gold/new/))
 * University of Tirana, Albania ([Dr. Klesti Hoxha](https://klestihoxha.al))
 * Radboud University, the Netherlands ([Dr. Bin Lin](https://binlin.info/))
